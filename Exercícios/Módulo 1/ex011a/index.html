@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes, ou aumente e diminua o tamanho do navegador!</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <hr>
+    <p>Para inserir imagens dinâmicas, deve-se adicionar a tag <code>&lt;picture&gt;</code>, e dentro dela a imagem, usando a tag <code>&lt;img&gt;</code>. <strong>Acima</strong> da tag <code>&lt;img&gt;</code>, deve-se adicionar um <code>source media type</code> contendo a imagem que deve ser mostrada em tamanhos menores.</p>
+    <p>Mudar o <code>min-width</code> para <code>max-width</code> e considerar 50px acima do tamanho da imagem. A cada mudança um novo <code>source media type</code> deve ser adicionado.</p>
+    <p>Os <code>source media types</code> devem ser ordenados da imagem menor para a maior.</p>
+    <hr>
+    <h1>Áudios</h1>
+    <p>Para reproduzir áudios em HTML5 existe a forma mais simples e a mais completa</p>
+    <h2>Simples:</h2>
+    <pre>
+        <code>
+    &lt;audio src="audio.mp3" controls autoplay&gt;&lt;/audio&gt;
+        </code>
+    </pre>
+    <p>O parâmetro <code>controls</code> exibe um player para controlar o áudio e o <code>autoplay</code> dá play automaticamente <br> <audio src="midia/aiaiaii.mp3" controls autoplay></audio> <br> É possível que o autoplay não funcione em alguns navegadores.
+    </p>
+    <h2>Completo:</h2>
+    <p>Para colocar um áudio da forma mais compatível, deve-se inserir a tag <code>&lt;audio&gt;</code> e remover o parâmetro <code>src</code>.</p>
+    <p>Dentro da tag deve ser inserida a tag <code>&lt;source&gt;</code> e completar com a origem e o tipo do áudio.</p>
+    <p>É possível colocar múltiplos sources com áudios em formatos diferentes, caso o navegador não carregue uma das mídias anteriores.</p>
+    <p> Na tag de audio, existem parâmetros a serem adicionados:</p>
+    <p>
+        <ul>
+            <li><code>preload=""</code> - indica o tipo de pré carregamento</li>
+                <ul>
+                    <li><code>auto</code>: carrega todo o conteúdo da página, não é muito recomendado pois pode ser lento.</li>
+                    <li><code>metadata</code>: carrega informações básicas.</li>
+                    <li><code>none</code>: não carrega nada.</li>
+                </ul>
+            <li><code>autoplay</code></li>
+            <li><code>controls</code></li>
+            <li><code>loop</code></li>
+        </ul>
+    </p>
+    <h3>Exemplo</h3>
+    <pre>
+        <code>
+    &lt;audio preload="metadata" controls autoplay&gt
+        &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+        &lt;source src="audio.wav" type="audio/wav"&gt;
+        &lt;source src="audio.ogg" type="audio/ogg"&gt;
+        &lt;p&gt;Seu navegador não reproduz áudio :(&lt;/p&gt;   
+    &lt;/audio&gt;
+        </code>
+    </pre>
+</body>
+</html>

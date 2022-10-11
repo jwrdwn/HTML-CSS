@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        /*
+        Para transformar inline em block ou vice e versa, basta adicionar o comando display: inline;  display: block; ou display: inline:block;
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkgray;
+            padding: 10px;
+        }
+        a {
+            border: 3px solid red;
+            padding: 2px;
+        }
+        #office {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            height: 72px;
+            width: 200px;
+            padding: 5px;
+            padding-left: 15px;
+            margin: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>H1 é box-level</h1>
+        <p>Parágrafo também é box-level, porém os <a href="#">links são inline-level</a>. Vamos ver como tudo isso funciona!</p>
+    <h1 id="office">The <br>Office</h1>
+</body>
+</html>

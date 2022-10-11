@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links externos</h1>
+        <h2>Sobrepondo a guia</h2>
+        <p>Com a tag &lt;a&gt; e o parâmetro <code>href=""</code> é possível criar um link para um site externo, que abrirá na aba ativa.</p>
+        <p><a href="https://github.com/jwrdwn?tab=repositories">Acesse meu GitHub!</a></p>
+        <h2>Em guia nova</h2>
+        <p>Para abrir links em nova guia, deve-se adicionar os parâmetros <code>target="_blank" rel="external"</code> após o link contido na tag &lt;a&gt;.</p>
+        <p><a href="https://www.youtube.com/channel/UCTzhDWI2ki3cl-3Shjgt6gA" target="_blank" rel="external">Acesse meu canal do YouTube!</a></p>
+        <h2>Links externos em outro idioma</h2>
+        <p>Com o parâmetro <code>hreflang=""</code> é possível indicar o idioma da página linkada, para facilitar a tradução automática do usuário se for necessário.</p>
+        <p><a href="https://www.w3schools.com/" target="_blank" rel="external" hreflang="en">Acesse a W3Schools!</a></p>
+        <hr>
+    <h1>Links internos</h1>
+        <p>Para linkar páginas do próprio site, basta dar de referência o nome do arquivo.</p>
+        <p>É interessante também adicionar o parâmetro <code>rel</code> na tag &lt;a&gt;. Para a página seguinte, o comando é <code>rel="next"</code>; para a anterior é <code>rel="prev"</code>.</p>
+        <p>Essa é a primeira página do site. Se desejar acessar a segunda página, clique <a href="pag002.html" rel="next">aqui</a>.</p>
+        <p>Você também pode acessar a <a href="noticias/pag003.html" rel="next">página de notícias</a>.</p>
+        <hr>
+        <h2>Parâmetros</h2>
+        <p>É possível incluir outros parâmetros <code>rel</code> para os links:</p>
+        <p><strong><code>author</code></strong>: indica que é um link para o site do autor do artigo atual</p>
+        <p><strong><code>nofollow</code></strong>: indica que é um link para um site não endossado, como um link pago</p>
+        <hr>
+    <h1>Links para download</h1>
+        <ul>
+            <li><a href="livro/10 - Ligações em toda parte.pdf">Baixar livro em PDF</a></li>
+            <li><a href="livro/capitulo10.zip" download="capitulo10.zip" type="application/zip">Livro compactado em ZIP</a></li>
+        </ul>
+        <p>Para downloads, deve-se adicionar os parâmetros <code>download="nomearquivo.ext"</code> e <code>type="mediatype/extensão"</code>. A lista de <em>media types</em> completa pode ser acessada <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">aqui</a>.</p>
+
+</body>
+</html>

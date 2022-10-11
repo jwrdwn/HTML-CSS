@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+        <h2>Código-fonte</h2>
+        <p>O comando <code>printf("Olá, Mundo!");</code> é escrito em C. Fazemos isso com a tag &lt;code&gt;, que gera letras monoespaçadas.</p>
+        <p>Se o desejado for representar um código completo, incluindo identação e tudo que foi originalmente escrito no HTML, usa-se a tag &lt;code&gt; dentro de uma tag &lt;pre&gt;, que mantém a formatação.</p>
+        <pre>
+            <code>
+    int main(){
+        int idade;
+
+        printf("Digite sua idade: ");
+            scanf("%d", &idade);
+
+        return 0;
+    }
+            </code>
+        </pre>
+        <h2>Citações</h2>
+            <h3>Simples</h3>
+            <p>Para dar significado de citação à um texto, usa-se a tag &lt;q&gt;:
+            <q>
+                <q>You miss 100% of the shots you dont take. -Wayne Gretzky</q> -Michael Scott
+            </q>
+            </p>
+            <p>A tag &lt;q&gt; apenas faz uma citação diretamente na linha do texto.</p>
+            <h3>Completas</h3>
+            <p>Para citações em blocos e mais completas, usa-se a tag &lt;blockquote&gt;</p>
+            <blockquote>
+                You miss 100% of the shots you dont take. -Wayne Gretzky
+                -Michael Scott
+            </blockquote>
+            <p>É possível também referenciar implicitamente a citação usando &lt;blockquote cite="link"&gt; na tag de abertura</p>
+        <h2>Abreviações / Significados</h2>
+        <p>É possível mostrar um texto ou significado de uma sigla ou abreviação ao passar o mouse por cima, usando a tag &lt;abbr&gt;</p>
+        <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS.</abbr></p>
+        <h2>Texto invertido</h2>
+        <p>Para mostrar um texto escrito de trás para frente usa-se a tag &lt;bdo&gt;. No parâmetro <code>dir=""</code> deve ser declarado <code>rtl</code>.</p>
+        <bdo dir="rtl">Meu nome é Jordan</bdo>
+</body>
+</html>

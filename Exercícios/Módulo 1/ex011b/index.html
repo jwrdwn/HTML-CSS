@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Hospedagem local</h1>
+    <p>Vídeos hospedados em meu servidor.</p>
+    <p>São colocados da mesma forma que áudios, mas com a tag &lt;video&gt;</p>
+    <video controls>
+        <source src="midias/videoplayback.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <p>É possível mudar a thumbnail do vídeo usando o parâmetro <code>poster</code>.</p>
+    <video controls poster="imagens/thumbnail.png">
+        <source src="midias/videoplayback.mp4" type="video/mp4">
+    </video>
+    <h1>Vídeos do YouTube / outros</h1>
+    <iframe width="426" height="315" src="https://www.youtube.com/embed/rfZfDLc0vMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
