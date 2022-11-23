@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burger"class="material-symbols-outlined" onclick="clickMenu()">menu</i>
@@ -26,8 +27,16 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dolor, ducimus eius atque dolorum ullam, odio voluptate quidem minus cupiditate voluptates corrupti ipsa sed consectetur molestias minima! Inventore, commodi assumenda!</p>
-            <p>Eum, voluptatum facere. Tenetur, neque adipisci, enim possimus rerum vel consectetur facere veniam deserunt iusto animi quam dolor molestias quos consequatur eum illo harum repellat, eaque debitis sequi dignissimos sapiente?</p>
+            <p>Eum, voluptatum facere. Tenetur, neque adipisci, enim possimus rerum vel consectetur facere veniam deserunt iusto animi quam dolor molestias quos consequatur eum illo harum repellat, eaque debitis sequi dignissimos sapiente?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ratione dolor eius natus maiores, delectus fugit quos reiciendis vero ut ab voluptatibus dolore quae reprehenderit dolorum sit cum! Nam, minima.
+            </p>
             <p>Aliquam similique eligendi molestiae recusandae! Cupiditate veniam dolore cumque consequuntur facere? Dolores, autem, distinctio fugiat illo maiores enim reprehenderit optio dolore animi voluptas nostrum corporis. Illo, consequatur! Nemo, doloribus eos!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati vel voluptates, quaerat enim repellat, minus non, assumenda reiciendis sed aperiam illum hic quod nobis maxime blanditiis consectetur commodi officia. Repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem ducimus, autem maxime vero non quaerat voluptatum obcaecati tenetur iusto totam, earum necessitatibus! Architecto, eveniet provident fugiat quaerat assumenda voluptatum.
+            Nihil alias totam expedita, eius maiores ex repellendus quibusdam quidem voluptates impedit tenetur quasi, quod distinctio nisi dolorem neque cum voluptatum eaque fugit quaerat? Praesentium magnam odit expedita quam ullam.
+            Itaque inventore eaque adipisci quae. Facilis et iusto minima tenetur explicabo voluptas autem quidem saepe dolorum natus doloribus excepturi quisquam impedit fugiat, nihil enim! Laborum ut dolore illum! Provident, suscipit.</p>
+            <p>Aliquam ab non similique dolorem at harum odio. Ipsa necessitatibus eligendi aut quas esse expedita possimus sint quo harum ipsum. Ea maiores facere nemo amet, magnam consectetur numquam quae facilis.</p>
+            <p>Tenetur voluptatem fugiat maxime sint repellat, eum, distinctio iure ratione, a porro exercitationem. Harum sapiente incidunt ipsam adipisci molestias a quidem! Incidunt quia inventore sunt ipsum, repudiandae minus architecto impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, deserunt nisi libero sit soluta ab, quasi rerum unde ad quam omnis! Totam eius ad doloremque repellendus excepturi porro, vero laborum?
+            Necessitatibus, delectus blanditiis enim assumenda culpa qui odit eaque! Expedita doloribus non nemo dolore. Nobis porro sunt sed qui commodi quia saepe fugiat iste! Dolor unde est eum labore veritatis?</p>
         </article>
     </main>
     <script>
@@ -36,6 +45,14 @@
                 itens.style.display = 'none';
             } else {
                 itens.style.display = 'block';
+            }
+        }
+
+        function mudouTamanho() {
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
             }
         }
     </script>
